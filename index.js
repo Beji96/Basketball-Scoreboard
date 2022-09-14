@@ -2,6 +2,7 @@ let countEL = document.getElementById("count-el");
 let countSecond = document.getElementById("count-second");
 let resetEl = document.getElementById("reset-el");
 let count = 0;
+let secondCount = 0;
 
 function addOnePoint() {
   count += 1;
@@ -17,16 +18,16 @@ function addThreePoints() {
 }
 
 function onePoint() {
-  count += 1;
-  countSecond.textContent = count;
+  secondCount += 1;
+  countSecond.textContent = secondCount;
 }
 function twoPoints() {
-  count += 2;
-  countSecond.textContent = count;
+  secondCount += 2;
+  countSecond.textContent = secondCount;
 }
 function threePoints() {
-  count += 3;
-  countSecond.textContent = count;
+  secondCount += 3;
+  countSecond.textContent = secondCount;
 }
 
 function resetHomeTeam() {
@@ -36,5 +37,5 @@ function resetHomeTeam() {
 
 function resetGuestTeam() {
   countSecond.textContent = 0;
-  count = 0;
+  secondCount = 0;
 }
