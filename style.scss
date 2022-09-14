@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+$bgBody: #1b244a;
+$boardTittle: #eeeeee;
+$points: #f94f6d;
+$homeScreen: #000;
+$btn: #9aabd8;
+body {
+  background-color: $bgBody;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  width: 100%;
+  margin: auto;
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0;
+  }
+  .bg {
+    margin-bottom: 2em;
+    background-color: $homeScreen;
+  }
+  h1 {
+    color: yellow;
+  }
+  h2 {
+    font-size: 2.5rem;
+    color: $boardTittle;
+    text-transform: uppercase;
+  }
+  h3 {
+    color: $points;
+    font-size: 5rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto;
+  }
+  button {
+    padding: 0.3em 0.7em;
+    border: 1px solid $btn;
+    color: $btn;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  .res-btn {
+    margin-top: 1em;
+  }
+  .reset {
+    padding: 0.95em 3.75em;
+    text-transform: uppercase;
+    color: darkorange;
+    font-size: 1.3rem;
+  }
+  .reset:hover {
+    background-color: #9aabd8;
+    color: brown;
+    font-weight: bold;
+  }
+}
